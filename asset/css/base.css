@@ -1,0 +1,83 @@
+:root{
+    --primary-color: #fd95ab;
+    --black-color: #000;
+    --text-color: #ee3880;
+    --border-color: #dbdbdb;
+    --star-color:#ffce3e;
+    --white-color: #fff;
+
+
+    --header-height: 150px; 
+    --header_search-height: 73px;
+    
+}
+
+
+
+
+
+
+
+*{
+    box-sizing: inherit;
+}
+html{
+    /* 62.5% toàn bộ cho html => 1rem = 10px = 1.rem */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+/*  chuyển động */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes headernotify{
+    /* scale(0) từ 0 trở ra hình dạng kích thước chính của nó */
+    from{
+        transform: scale(0) ;
+    }
+    /* 1 là kích thước hiện tại */
+    to{
+        transform: scale(1) ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* btn */
+.btn{
+    min-width: 115px;
+    height: 34px;
+    border: 1px solid var(--text-color);
+    border-radius: 3px;
+    margin: 10px 0 10px 0;
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: var(--text-color)
+}
+.btn:hover{
+    background-color: var(--text-color);
+    cursor: pointer;
+    color: #fff;
+}
